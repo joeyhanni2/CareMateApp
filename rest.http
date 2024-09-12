@@ -1,0 +1,22 @@
+### Login Request
+POST http://localhost:5015/api/user/login
+Content-Type: application/json
+
+{
+    "email": "testuser@example.com",
+    "password": "password123",
+    "role": "Patient"
+}
+
+### Register Request (Optional)
+POST http://localhost:5015/api/user/register
+Content-Type: application/json
+
+{
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "testuser@example.com",
+    "password": "password123",
+    "confpassword": "password123",
+    "role": "Patient"
+}
